@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>เข้าสู่ระบบ — มหาวิทยาลัยตัวอย่าง</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="html/css/style.css"><script src="html/js/app.js" defer></script>
+</head>
+<body>
+<div class="top-bar"><div class="top-bar-inner">
+  <div class="top-links">
+    <a href="personnel.html" data-i18n="top_personnel">บุคลากร</a><span class="top-divider">|</span>
+    <a href="students.html" data-i18n="top_student">นักศึกษา</a><span class="top-divider">|</span>
+    <a href="alumni.html" data-i18n="top_alumni">ศิษย์เก่า</a><span class="top-divider">|</span>
+    <a href="login.html" class="active" data-i18n="top_login">เข้าสู่ระบบ</a>
+  </div>
+  <div class="top-actions">
+    <form class="search-box" data-search-form><input type="search" data-i18n-placeholder="search_placeholder" placeholder="ค้นหา..."><button type="submit" data-i18n="search_btn">ค้นหา</button></form>
+    <div class="lang-switcher"><button type="button" data-lang="th" class="active">TH</button><span>|</span><button type="button" data-lang="en">EN</button></div>
+  </div>
+</div></div>
+<header class="header-main"><div class="header-main-inner">
+  <a href="index.html" class="brand"><div class="brand-emblem"><img src="img/images.png" alt="ตราสัญลักษณ์มหาวิทยาลัยราชภัฏร้อยเอ็ด"></div><div class="brand-text"><h1 data-i18n="brand_title">มหาวิทยาลัยตัวอย่าง</h1><p data-i18n="brand_subtitle">EXAMPLE UNIVERSITY</p><small data-i18n="brand_desc">มหาวิทยาลัยเพื่อชุมชน · นวัตกรรมเพื่อสังคม</small></div></a>
+  <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="mobile-panel"><span></span><span></span><span></span></button>
+</div>
+<div id="mobile-panel" class="mobile-panel">
+  <form class="search-box" data-search-form><input type="search" data-i18n-placeholder="search_placeholder" placeholder="ค้นหา..."><button type="submit" data-i18n="search_btn">ค้นหา</button></form>
+  <ul class="mobile-nav">
+    <li><a href="index.html">หน้าหลัก</a></li><li><a href="personnel.html">บุคลากร</a></li><li><a href="students.html">นักศึกษา</a></li><li><a href="alumni.html">ศิษย์เก่า</a></li><li><a href="login.html">เข้าสู่ระบบ</a></li>
+    <li><a href="about.html">เกี่ยวกับมหาวิทยาลัย</a></li><li><a href="programs.html">หลักสูตร/การศึกษา</a></li><li><a href="admission.html">การรับสมัคร</a></li><li><a href="news.html">ข่าวสารและกิจกรรม</a></li><li><a href="intranet.html">ระบบสารสนเทศภายใน</a></li><li><a href="sitemap.html">แผนผังเว็บไซต์</a></li>
+  </ul>
+</div></header>
+<nav class="main-nav" aria-label="เมนูหลัก"><div class="main-nav-inner">
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav_home">หน้าหลัก</a></li>
+    <li class="has-dropdown">
+        <a href="about.html" data-i18n="nav_about">เกี่ยวกับมหาวิทยาลัย</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="about.html">ประวัติ</a></li><li><a href="about.html#vision">วิสัยทัศน์</a></li><li><a href="about.html#structure">โครงสร้าง</a></li><li><a href="about.html#leaders">ผู้บริหาร</a></li><li><a href="about.html#map">แผนที่</a></li></ul></li>
+    <li class="has-dropdown">
+        <a href="programs.html" data-i18n="nav_programs">หลักสูตร/การศึกษา</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="programs.html">ปริญญาตรี</a></li><li><a href="programs.html#graduate">บัณฑิตศึกษา</a></li><li><a href="programs.html#faculties">คณะ</a></li></ul></li>
+    <li class="has-dropdown">
+        <a href="admission.html" data-i18n="nav_admission">การรับสมัครเข้าศึกษา</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="admission.html">TCAS</a></li><li><a href="admission.html#scholar">ทุน</a></li><li><a href="admission.html#guide">คู่มือ</a></li></ul></li>
+    <li class="has-dropdown">
+        <a href="news.html" data-i18n="nav_news">ข่าวสารและกิจกรรม</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="news.html">ข่าวมหาวิทยาลัย</a></li><li><a href="news.html#events">กิจกรรม</a></li><li><a href="news.html#announce">ประกาศ</a></li></ul></li>
+    <li class="has-dropdown">
+        <a href="intranet.html" data-i18n="nav_intranet">ระบบสารสนเทศภายใน</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="intranet.html">ทะเบียน</a></li><li><a href="intranet.html">LMS</a></li><li><a href="intranet.html">E-Office</a></li><li><a href="intranet.html">HR</a></li></ul></li>
+    <li><a href="contact.html" data-i18n="nav_contact">ติดต่อเรา</a></li>
+  </ul><a href="login.html" class="btn btn-primary" style="padding:.5rem .95rem;font-size:.84rem">เข้าสู่ระบบ →</a>
+</div></nav>
+
+<div class="page-hero"><div class="page-hero-inner"><span class="badge">บัญชีผู้ใช้</span><h1>เข้าสู่ระบบ <span>Login</span></h1><p>เข้าสู่ระบบโปรไฟล์สมาชิกของเว็บไซต์ — นักศึกษา บุคลากร และศิษย์เก่า</p></div></div>
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="index.html">หน้าหลัก</a> › เข้าสู่ระบบ</div></div>
+
+<div class="container">
+  <div class="section">
+    <div class="login-card">
+      <div class="card">
+        <div style="display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:1rem">
+          <button type="button" class="btn btn-primary" style="flex:1;border-radius:10px" onclick="switchRole(this,'student')">นักศึกษา</button>
+          <button type="button" class="btn" style="flex:1;border-radius:10px;background:#fff;border:1px solid var(--line)" onclick="switchRole(this,'personnel')">บุคลากร</button>
+          <button type="button" class="btn" style="flex:1;border-radius:10px;background:#fff;border:1px solid var(--line)" onclick="switchRole(this,'alumni')">ศิษย์เก่า</button>
+        </div>
+        <p id="role-hint" style="font-size:.85rem;color:var(--muted);margin-bottom:1rem">นักศึกษา: ใช้รหัสสมาชิกและรหัสผ่านที่ลงทะเบียนบนเว็บไซต์นี้</p>
+        <form id="member-login-form" method="post" action="login.php">
+          <input type="hidden" id="login-role" name="role" value="student">
+          <div class="form-group"><label for="login-user">ชื่อผู้ใช้ / Username</label><input type="text" id="login-user" placeholder="เช่น 6601xxxx หรือ staff id" required></div>
+          <input type="hidden" name="member_id" id="login-member-id">
+          <div class="form-group"><label for="login-pass">รหัสผ่าน / Password</label><input type="password" id="login-pass" name="password" placeholder="••••••••" required autocomplete="current-password"></div>
+          <p id="login-error" role="alert" style="display:none;color:#a53c35;margin:.5rem 0"></p>
+          <div style="display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem;flex-wrap:wrap">
+            <label style="display:flex;align-items:center;gap:.4rem;font-size:.88rem;color:var(--muted)"><input type="checkbox"> จดจำฉันไว้</label>
+            <a href="contact.html" style="font-size:.85rem;color:var(--navy-3);font-weight:700">ลืมรหัสผ่าน?</a>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;border-radius:10px">เข้าสู่ระบบ — Login</button>
+          <p style="text-align:center;font-size:.82rem;color:var(--muted);margin-top:.8rem">ระบบ Microsoft 365 / Google SSO ยังไม่เชื่อมต่อ</p>
+        </form>
+        <p style="margin:.8rem 0 0;text-align:center;font-size:.88rem;color:var(--muted)">ยังไม่มีบัญชี? <a href="register.php" style="color:var(--navy-3);font-weight:700">สมัครสมาชิก</a></p>
+        <div style="margin-top:1rem;padding:.8rem;background:#f8fafc;border:1px solid var(--line);border-radius:10px;font-size:.82rem;color:var(--muted)">
+          <strong style="color:var(--navy)">ผู้สมัครเรียนใหม่</strong> — ยังไม่มีบัญชี? <a href="admission.html" style="color:var(--navy-3);font-weight:700">สมัครเรียนที่นี่</a> แล้วระบบจะสร้างบัญชีให้อัตโนมัติ<br>
+          <strong style="color:var(--navy)">ศิษย์เก่า</strong> — <a href="alumni.html" style="color:var(--navy-3);font-weight:700">ลงทะเบียนศิษย์เก่า</a> เพื่อขอบัตรและสิทธิประโยชน์
+        </div>
+      </div>
+
+      <div class="intranet-grid" style="margin-top:1rem">
+        <a href="students.html" class="app-tile"><div class="app-icon">📝</div><h3>นักศึกษา</h3><p>ทะเบียน / LMS / เกรด</p></a>
+        <a href="personnel.html" class="app-tile"><div class="app-icon">👥</div><h3>บุคลากร</h3><p>HR / E-Office</p></a>
+        <a href="alumni.html" class="app-tile"><div class="app-icon">🤝</div><h3>ศิษย์เก่า</h3><p>สมาคม / ขอเอกสาร</p></a>
+      </div>
+
+      <div class="card" style="margin-top:1rem;background:#fffbe6;border-color:#fde68a">
+        <h3 style="font-size:.9rem">🔒 ความปลอดภัย</h3>
+        <p style="font-size:.84rem;color:var(--muted)">อย่าเปิดเผยรหัสผ่านกับผู้อื่น มหาวิทยาลัยไม่มีนโยบายขอรหัสผ่านทางอีเมลหรือโทรศัพท์ หากพบการใช้งานผิดปกติ ติดต่อศูนย์ IT ทันที</p>
+        <p style="font-size:.82rem;color:var(--muted);margin-top:.4rem">ศูนย์ช่วยเหลือ IT: 0-4422-0123 · it-helpdesk@example-university.ac.th · อาคาร IT ชั้น 1</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand"><div style="display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem"><div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#1e4a7a,#2a6cb6);display:grid;place-items:center">🎓</div><div><h4 style="margin:0">มหาวิทยาลัยตัวอย่าง</h4><small style="color:#94a3b8;letter-spacing:.06em;font-weight:600">EXAMPLE UNIVERSITY</small></div></div><p>มุ่งมั่นผลิตบัณฑิตคุณภาพ — เรียนรู้เพื่อชุมชน นวัตกรรมเพื่อสังคม</p>
+      <ul class="footer-contact"><li><span>📍</span><span>123 ถนนมหาวิทยาลัย ต.ในเมือง อ.เมือง จ.ตัวอย่าง 30000</span></li><li><span>📞</span><span>โทร. 0-4422-0000</span> · <span>โทรสาร 0-4422-0001</span></li><li><span>✉️</span><span>info@example-university.ac.th</span></li><li><span>🕘</span><span>จันทร์–ศุกร์ 08:30–16:30 น.</span></li></ul><a href="sitemap.html" style="display:inline-block;margin-top:.8rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:.4rem .75rem;border-radius:999px;font-size:.82rem;color:#cbd5e1">🗺️ แผนผังเว็บไซต์ →</a></div>
+    <div class="footer-col"><h4>เกี่ยวกับมหาวิทยาลัย</h4><ul><li><a href="about.html">ประวัติ</a></li><li><a href="about.html#vision">วิสัยทัศน์</a></li><li><a href="about.html#structure">โครงสร้าง</a></li><li><a href="about.html#leaders">ผู้บริหาร</a></li><li><a href="about.html#map">แผนที่</a></li></ul></div>
+    <div class="footer-col"><h4>หลักสูตร/การศึกษา</h4><ul><li><a href="programs.html">ปริญญาตรี</a></li><li><a href="programs.html#graduate">โท-เอก</a></li><li><a href="programs.html#short">ระยะสั้น</a></li><li><a href="programs.html#faculties">คณะ</a></li><li><a href="programs.html#calendar">ปฏิทิน</a></li></ul></div>
+    <div class="footer-col"><h4>การรับสมัคร</h4><ul><li><a href="admission.html">TCAS</a></li><li><a href="admission.html#quota">โควตา</a></li><li><a href="admission.html#scholar">ทุน</a></li><li><a href="admission.html#guide">คู่มือ</a></li></ul></div>
+    <div class="footer-col"><h4>ข่าวสารและกิจกรรม</h4><ul><li><a href="news.html">ข่าวมหาลัย</a></li><li><a href="news.html#faculty">ข่าวคณะ</a></li><li><a href="news.html#events">กิจกรรม</a></li><li><a href="news.html#announce">ประกาศ</a></li></ul></div>
+    <div class="footer-col"><h4>ระบบสารสนเทศ</h4><ul><li><a href="intranet.html">ทะเบียน</a></li><li><a href="intranet.html">LMS</a></li><li><a href="intranet.html">E-Office</a></li><li><a href="login.html">เข้าสู่ระบบ</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>สงวนลิขสิทธิ์ © 2026 มหาวิทยาลัยตัวอย่าง</span><span><a href="sitemap.html">Sitemap</a> · <a href="contact.html">Privacy</a> · <a href="contact.html">Contact</a></span></div>
+</footer>
+<script>
+function switchRole(btn, role){
+  btn.closest('.card').querySelectorAll('.btn').forEach(b=>{b.style.background='#fff';b.style.border='1px solid #e2e8f0';b.style.color='#1e293b'});
+  btn.style.background='#c8a84e';btn.style.color='#0f2b46';btn.style.borderColor='#c8a84e';
+  const hints={student:'นักศึกษา: ใช้รหัสสมาชิกและรหัสผ่านที่ลงทะเบียนบนเว็บไซต์นี้',personnel:'บุคลากร: ใช้รหัสสมาชิกและรหัสผ่านที่ลงทะเบียนบนเว็บไซต์นี้',alumni:'ศิษย์เก่า: ใช้รหัสสมาชิกและรหัสผ่านที่ลงทะเบียนบนเว็บไซต์นี้'};
+  document.getElementById('role-hint').textContent=hints[role]||'';
+  document.getElementById('login-role').value=role;
+}
+document.getElementById('member-login-form').addEventListener('submit',()=>{
+  document.getElementById('login-member-id').value=document.getElementById('login-user').value.trim();
+});
+const loginErrors={invalid:'รหัสสมาชิกหรือรหัสผ่านไม่ถูกต้อง',unavailable:'ระบบเข้าสู่ระบบยังเชื่อมต่อฐานข้อมูลไม่ได้ กรุณาลองใหม่ภายหลัง'};
+const loginError=loginErrors[new URLSearchParams(window.location.search).get('error')];
+if(loginError){const message=document.getElementById('login-error');message.textContent=loginError;message.style.display='block';}
+</script>
+</body>
+</html>

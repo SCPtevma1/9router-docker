@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>มหาวิทยาลัยตัวอย่าง — Example University</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="html/css/style.css?v=20261009-gallery-images">
+  <script src="html/js/app.js?v=20261009-gallery-images" defer></script>
+</head>
+<body>
+
+<!-- ===== TOP BAR ===== -->
+<div class="top-bar">
+  <div class="top-bar-inner">
+    <div class="top-links">
+      <a href="personnel.html" data-i18n="top_personnel">บุคลากร</a>
+      <span class="top-divider">|</span>
+      <a href="students.html" data-i18n="top_student">นักศึกษา</a>
+      <span class="top-divider">|</span>
+      <a href="alumni.html" data-i18n="top_alumni">ศิษย์เก่า</a>
+      <span class="top-divider">|</span>
+      <a href="login.html" data-i18n="top_login">เข้าสู่ระบบ</a>
+    </div>
+    <div class="top-actions">
+      <form class="search-box" data-search-form role="search" aria-label="Search">
+        <input type="search" data-i18n-placeholder="search_placeholder" placeholder="ค้นหา..." aria-label="ค้นหา">
+        <button type="submit" data-i18n="search_btn">ค้นหา</button>
+      </form>
+      <div class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" data-lang="th" class="active">TH</button><span>|</span><button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== BRANDING HEADER ===== -->
+<header class="header-main">
+  <div class="header-main-inner">
+    <a href="index.html" class="brand">
+      <div class="brand-emblem"><img src="img/images.png" alt="ตราสัญลักษณ์มหาวิทยาลัยราชภัฏร้อยเอ็ด"></div>
+      <div class="brand-text">
+        <h1 data-i18n="brand_title">มหาวิทยาลัยราชภัฏร้อยเอ็ด</h1>
+        <p data-i18n="brand_subtitle">EXAMPLE UNIVERSITY</p>
+        <small data-i18n="brand_desc">มหาวิทยาลัยเพื่อชุมชน · นวัตกรรมเพื่อสังคม</small>
+      </div>
+    </a>
+    <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="mobile-panel" aria-label="เมนู">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div id="mobile-panel" class="mobile-panel">
+    <form class="search-box" data-search-form role="search">
+      <input type="search" data-i18n-placeholder="search_placeholder" placeholder="ค้นหา...">
+      <button type="submit" data-i18n="search_btn">ค้นหา</button>
+    </form>
+    <ul class="mobile-nav">
+      <li><a href="index.html" data-i18n="nav_home">หน้าหลัก</a></li>
+      <li><button data-mobile-toggle="m-about" aria-expanded="false"><span data-i18n="nav_about">เกี่ยวกับมหาวิทยาลัย</span> <span>▾</span></button>
+        <ul id="m-about" class="sub">
+          <li><a href="about.html" data-i18n="nav_about_history">ประวัติและความเป็นมา</a></li>
+          <li><a href="about.html#vision" data-i18n="nav_about_vision">วิสัยทัศน์ พันธกิจ</a></li>
+          <li><a href="about.html#structure" data-i18n="nav_about_structure">โครงสร้างองค์กร</a></li>
+          <li><a href="about.html#leaders" data-i18n="nav_about_leader">ผู้บริหาร</a></li>
+          <li><a href="about.html#map" data-i18n="nav_about_map">แผนที่มหาวิทยาลัย</a></li>
+        </ul></li>
+      <li><button data-mobile-toggle="m-programs" aria-expanded="false"><span data-i18n="nav_programs">หลักสูตร/การศึกษา</span> <span>▾</span></button>
+        <ul id="m-programs" class="sub">
+          <li><a href="programs.html" data-i18n="nav_programs_bachelor">ปริญญาตรี</a></li>
+          <li><a href="programs.html#graduate" data-i18n="nav_programs_master">ปริญญาโท-เอก</a></li>
+          <li><a href="programs.html#short" data-i18n="nav_programs_short">หลักสูตรระยะสั้น</a></li>
+          <li><a href="programs.html#faculties" data-i18n="nav_programs_faculty">คณะ / วิทยาลัย</a></li>
+        </ul></li>
+      <li><button data-mobile-toggle="m-admission" aria-expanded="false"><span data-i18n="nav_admission">การรับสมัครเข้าศึกษา</span> <span>▾</span></button>
+        <ul id="m-admission" class="sub">
+          <li><a href="admission.html" data-i18n="nav_admission_tcas">TCAS / รอบรับสมัคร</a></li>
+          <li><a href="admission.html#scholar" data-i18n="nav_admission_scholar">ทุนการศึกษา</a></li>
+          <li><a href="admission.html#guide" data-i18n="nav_admission_guide">คู่มือการสมัคร</a></li>
+        </ul></li>
+      <li><button data-mobile-toggle="m-news" aria-expanded="false"><span data-i18n="nav_news">ข่าวสารและกิจกรรม</span> <span>▾</span></button>
+        <ul id="m-news" class="sub">
+          <li><a href="news.html" data-i18n="nav_news_uni">ข่าวมหาวิทยาลัย</a></li>
+          <li><a href="news.html#events" data-i18n="nav_news_event">กิจกรรม</a></li>
+          <li><a href="news.html#announce" data-i18n="nav_news_announce">ประกาศ</a></li>
+        </ul></li>
+      <li><button data-mobile-toggle="m-intranet" aria-expanded="false"><span data-i18n="nav_intranet">ระบบสารสนเทศภายใน</span> <span>▾</span></button>
+        <ul id="m-intranet" class="sub">
+          <li><a href="intranet.html">ระบบทะเบียน</a></li><li><a href="intranet.html">LMS / E-Learning</a></li><li><a href="intranet.html">E-Office</a></li><li><a href="intranet.html">ห้องสมุด</a></li>
+        </ul></li>
+      <li><a href="contact.html" data-i18n="nav_contact">ติดต่อเรา</a></li>
+      <li><a href="sitemap.html" data-i18n="footer_sitemap">แผนผังเว็บไซต์</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- ===== MAIN NAV ===== -->
+<nav class="main-nav" aria-label="เมนูหลัก">
+  <div class="main-nav-inner">
+    <ul class="nav-links">
+      <li class="active"><a href="index.html" class="active" data-i18n="nav_home">หน้าหลัก</a></li>
+      <li class="has-dropdown">
+        <a href="about.html" data-i18n="nav_about">เกี่ยวกับมหาวิทยาลัย</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button>
+        <ul class="dropdown">
+          <li><a href="about.html"><span data-i18n="nav_about_history">ประวัติและความเป็นมา</span></a></li>
+          <li><a href="about.html#vision"><span data-i18n="nav_about_vision">วิสัยทัศน์ พันธกิจ</span></a></li>
+          <li><a href="about.html#structure"><span data-i18n="nav_about_structure">โครงสร้างองค์กร</span></a></li>
+          <li><a href="about.html#leaders"><span data-i18n="nav_about_leader">ผู้บริหาร</span></a></li>
+          <li><a href="about.html#map"><span data-i18n="nav_about_map">แผนที่มหาวิทยาลัย</span></a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="programs.html" data-i18n="nav_programs">หลักสูตร/การศึกษา</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button>
+        <ul class="dropdown">
+          <li><a href="programs.html"><span data-i18n="nav_programs_bachelor">ปริญญาตรี</span> <small>Bachelor — 4 ปี</small></a></li>
+          <li><a href="programs.html#graduate"><span data-i18n="nav_programs_master">ปริญญาโท-เอก</span> <small>Graduate</small></a></li>
+          <li><a href="programs.html#short"><span data-i18n="nav_programs_short">หลักสูตรระยะสั้น</span> <small>Short Courses</small></a></li>
+          <li><a href="programs.html#faculties"><span data-i18n="nav_programs_faculty">คณะ / วิทยาลัย</span></a></li>
+          <li><a href="programs.html#calendar"><span data-i18n="nav_programs_calendar">ปฏิทินการศึกษา</span></a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="admission.html" data-i18n="nav_admission">การรับสมัครเข้าศึกษา</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button>
+        <ul class="dropdown">
+          <li><a href="admission.html"><span data-i18n="nav_admission_tcas">TCAS / รอบรับสมัคร</span></a></li>
+          <li><a href="admission.html#quota"><span data-i18n="nav_admission_quota">โควตา / พื้นที่</span></a></li>
+          <li><a href="admission.html#scholar"><span data-i18n="nav_admission_scholar">ทุนการศึกษา</span></a></li>
+          <li><a href="admission.html#guide"><span data-i18n="nav_admission_guide">คู่มือการสมัคร</span></a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="news.html" data-i18n="nav_news">ข่าวสารและกิจกรรม</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button>
+        <ul class="dropdown">
+          <li><a href="news.html"><span data-i18n="nav_news_uni">ข่าวมหาวิทยาลัย</span></a></li>
+          <li><a href="news.html#faculty"><span data-i18n="nav_news_faculty">ข่าวคณะ</span></a></li>
+          <li><a href="news.html#events"><span data-i18n="nav_news_event">กิจกรรม / ปฏิทินกิจกรรม</span></a></li>
+          <li><a href="news.html#announce"><span data-i18n="nav_news_announce">ประกาศ</span></a></li>
+        </ul>
+      </li>
+      <li class="has-dropdown">
+        <a href="intranet.html" data-i18n="nav_intranet">ระบบสารสนเทศภายใน</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button>
+        <ul class="dropdown">
+          <li><a href="intranet.html">ระบบทะเบียน / Registration</a></li>
+          <li><a href="intranet.html">LMS / E-Learning</a></li>
+          <li><a href="intranet.html">E-Office / E-Document</a></li>
+          <li><a href="intranet.html">HR / บุคลากร</a></li>
+          <li><a href="intranet.html">ห้องสมุด / Library</a></li>
+        </ul>
+      </li>
+      <li><a href="contact.html" data-i18n="nav_contact">ติดต่อเรา</a></li>
+    </ul>
+    <a href="admission.html" class="btn btn-primary" style="padding:.52rem .95rem;font-size:.84rem">สมัครเรียน →</a>
+  </div>
+</nav>
+
+<!-- ===== HERO (future) ===== -->
+<section class="hero">
+  <!-- orbs injected by JS, fallback static -->
+  <div class="hero-inner">
+    <div>
+      <div class="hero-kicker"><i></i><span data-i18n="hero_kicker">เปิดรับสมัคร ภาคเรียนที่ 1/2569</span> — TCAS รอบ 1 Portfolio</div>
+      <h2>
+        <span class="line1" data-i18n="hero_title_1">เรียนรู้เพื่ออนาคต</span><br>
+        <span class="grad" data-i18n="hero_title_2">สร้างนวัตกรรมเพื่อสังคม</span>
+      </h2>
+      <p data-i18n="hero_desc">มหาวิทยาลัยตัวอย่าง มุ่งพัฒนาบัณฑิตที่มีคุณภาพ มีคุณธรรม พร้อมทักษะแห่งศตวรรษที่ 21 เชื่อมโยงการเรียนรู้กับชุมชนและอุตสาหกรรม — ด้วยแล็บ AI, Maker Space และเครือข่าย 30+ ประเทศ</p>
+      <div class="hero-actions">
+        <a href="admission.html" class="btn btn-primary" data-i18n="hero_cta_primary">สมัครเรียนออนไลน์</a>
+        <a href="programs.html" class="btn btn-ghost" data-i18n="hero_cta_ghost">ดูหลักสูตรทั้งหมด</a>
+      </div>
+      <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem">
+        <span style="font-size:.74rem;color:#52675a;background:#fff;border:1px solid #dce6df;padding:.3rem .6rem;border-radius:6px">สมัครถึง 15 มี.ค. 2569</span>
+        <span style="font-size:.74rem;color:#52675a;background:#fff;border:1px solid #dce6df;padding:.3rem .6rem;border-radius:6px">ทุนเต็มจำนวน + งานวิจัย</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <h3 data-i18n="hero_card_title">ข่าวเด่น · LIVE</h3>
+      <p id="search-result-msg" hidden style="background:#eaf3ed;border:1px solid #d7e6db;color:#176b49;padding:.5rem .7rem;border-radius:6px;font-size:.84rem;margin-bottom:.7rem"></p>
+      <ul class="mini-list" data-home-featured-news aria-live="polite"><li>กำลังโหลดข่าว...</li></ul>
+      <div style="display:flex;gap:.5rem;margin-top:.9rem">
+        <a href="admission.html" class="btn btn-primary" style="flex:1;padding:.55rem;border-radius:12px;font-size:.84rem">สมัครเลย →</a>
+        <a href="news.html" class="btn btn-ghost" style="flex:1;padding:.55rem;border-radius:12px;font-size:.84rem">ข่าวทั้งหมด</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+  <div class="section">
+    <div class="stats">
+      <div class="stat" data-searchable><strong data-faculty-count>—</strong><span>คณะ / วิทยาลัย</span></div>
+      <div class="stat" data-searchable><strong data-course-count>—</strong><span>หลักสูตร</span></div>
+      <div class="stat" data-searchable><strong>15,000+</strong><span>นักศึกษา</span></div>
+      <div class="stat" data-searchable><strong>Top 10</strong><span>มหาวิทยาลัยนวัตกรรม</span></div>
+    </div>
+  </div>
+
+  <section id="programs" class="section">
+    <div class="section-head">
+      <div><h2 data-i18n="nav_programs">หลักสูตร/การศึกษา</h2><p>ข้อมูลหลักสูตรและคณะจากระบบแอดมิน</p></div>
+      <a href="programs.html" class="link" style="font-weight:800;color:var(--cyan-2)">ดูทั้งหมด →</a>
+    </div>
+    <div class="cards" data-home-course-list aria-live="polite"><p class="muted">กำลังโหลดข้อมูลหลักสูตร...</p></div>
+    <div class="section-head"><div><h3>คณะ / วิทยาลัย</h3></div></div>
+    <div class="cards" data-home-faculty-list aria-live="polite"><p class="muted">กำลังโหลดข้อมูลหน่วยงาน...</p></div>
+  </section>
+
+  <section id="news" class="section">
+    <div class="section-head">
+      <div><h2 data-i18n="nav_news">ข่าวสารและกิจกรรม</h2><p>ข่าวประชาสัมพันธ์ กิจกรรม และความสำเร็จของนักศึกษา</p></div>
+      <a href="news.html" class="link" style="font-weight:800;color:var(--cyan-2)">ข่าวทั้งหมด →</a>
+    </div>
+    <div class="cards" data-home-news-list aria-live="polite"><p class="muted">กำลังโหลดข่าว...</p></div>
+  </section>
+</div>
+
+<!-- ===== FOOTER (Future) ===== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div style="display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem">
+        <div style="width:44px;height:44px;border-radius:8px;background:#176b49;display:grid;place-items:center;font-size:1.2rem;color:#fff">◈</div>
+        <div>
+          <h4 style="margin:0" data-i18n="footer_about">มหาวิทยาลัยตัวอย่าง</h4>
+          <small style="color:#64756b;letter-spacing:.04em;font-weight:700">EXAMPLE UNIVERSITY — EST. 1975</small>
+        </div>
+      </div>
+      <p data-i18n="footer_about_desc">มุ่งมั่นผลิตบัณฑิตคุณภาพ สร้างงานวิจัยที่ตอบโจทย์สังคม และบริการวิชาการเพื่อการพัฒนาที่ยั่งยืน</p>
+      <ul class="footer-contact">
+        <li><span>📍</span><span>123 ถนนมหาวิทยาลัย ต.ในเมือง อ.เมือง จ.ตัวอย่าง 30000</span></li>
+        <li><span>📞</span><span>โทร. 0-4422-0000</span> &nbsp;·&nbsp; <span>โทรสาร 0-4422-0001</span></li>
+        <li><span>✉️</span><span>info@example-university.ac.th</span></li>
+        <li><span>🕘</span><span>จันทร์–ศุกร์ 08:30–16:30 น.</span></li>
+      </ul>
+      <a href="sitemap.html" style="display:inline-flex;align-items:center;gap:.35rem;margin-top:.85rem;background:#fff;border:1px solid #dce6df;padding:.42rem .75rem;border-radius:6px;font-size:.82rem;color:#40564a">🗺️ แผนผังเว็บไซต์ →</a>
+    </div>
+    <div class="footer-col"><h4 data-i18n="nav_about">เกี่ยวกับมหาวิทยาลัย</h4><ul><li><a href="about.html">ประวัติและความเป็นมา</a></li><li><a href="about.html#vision">วิสัยทัศน์ พันธกิจ</a></li><li><a href="about.html#structure">โครงสร้างองค์กร</a></li><li><a href="about.html#leaders">ผู้บริหาร</a></li><li><a href="about.html#map">แผนที่มหาวิทยาลัย</a></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="nav_programs">หลักสูตร/การศึกษา</h4><ul><li><a href="programs.html">ปริญญาตรี</a></li><li><a href="programs.html#graduate">ปริญญาโท-เอก</a></li><li><a href="programs.html#short">หลักสูตรระยะสั้น</a></li><li><a href="programs.html#faculties">คณะ / วิทยาลัย</a></li><li><a href="programs.html#calendar">ปฏิทินการศึกษา</a></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="nav_admission">การรับสมัครเข้าศึกษา</h4><ul><li><a href="admission.html">TCAS / รอบรับสมัคร</a></li><li><a href="admission.html#quota">โควตา / พื้นที่</a></li><li><a href="admission.html#scholar">ทุนการศึกษา</a></li><li><a href="admission.html#guide">คู่มือการสมัคร</a></li><li><a href="admission.html">ปฏิทินรับสมัคร</a></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="nav_news">ข่าวสารและกิจกรรม</h4><ul><li><a href="news.html">ข่าวมหาวิทยาลัย</a></li><li><a href="news.html#faculty">ข่าวคณะ</a></li><li><a href="news.html#events">กิจกรรม / ปฏิทินกิจกรรม</a></li><li><a href="news.html#announce">ประกาศ</a></li><li><a href="news.html">ข่าวทั้งหมด</a></li></ul></div>
+    <div class="footer-col"><h4 data-i18n="nav_intranet">ระบบสารสนเทศภายใน</h4><ul><li><a href="intranet.html">ระบบทะเบียน</a></li><li><a href="intranet.html">LMS / E-Learning</a></li><li><a href="intranet.html">E-Office</a></li><li><a href="intranet.html">HR / บุคลากร</a></li><li><a href="intranet.html">ห้องสมุด / Library</a></li><li><a href="login.html" data-i18n="top_login">เข้าสู่ระบบ</a></li></ul></div>
+  </div>
+  <div class="footer-bottom">
+    <span data-i18n="all_rights">สงวนลิขสิทธิ์ © 2026 มหาวิทยาลัยตัวอย่าง</span>
+    <span><a href="sitemap.html">Sitemap</a> · <a href="contact.html">Privacy</a> · <a href="contact.html">Accessibility</a> · <a href="contact.html">Contact</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>การรับสมัครเข้าศึกษา — มหาวิทยาลัยตัวอย่าง</title>
+  <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="html/css/style.css"><script src="html/js/app.js" defer></script>
+</head>
+<body>
+<div class="top-bar"><div class="top-bar-inner">
+  <div class="top-links">
+    <a href="personnel.html" data-i18n="top_personnel">บุคลากร</a><span class="top-divider">|</span>
+    <a href="students.html" data-i18n="top_student">นักศึกษา</a><span class="top-divider">|</span>
+    <a href="alumni.html" data-i18n="top_alumni">ศิษย์เก่า</a><span class="top-divider">|</span>
+    <a href="login.html" data-i18n="top_login">เข้าสู่ระบบ</a>
+  </div>
+  <div class="top-actions">
+    <form class="search-box" data-search-form><input type="search" data-i18n-placeholder="search_placeholder" placeholder="ค้นหา..."><button type="submit" data-i18n="search_btn">ค้นหา</button></form>
+    <div class="lang-switcher"><button type="button" data-lang="th" class="active">TH</button><span>|</span><button type="button" data-lang="en">EN</button></div>
+  </div>
+</div></div>
+<header class="header-main"><div class="header-main-inner">
+  <a href="index.html" class="brand"><div class="brand-emblem"><img src="img/images.png" alt="ตราสัญลักษณ์มหาวิทยาลัยราชภัฏร้อยเอ็ด"></div><div class="brand-text"><h1 data-i18n="brand_title">มหาวิทยาลัยตัวอย่าง</h1><p data-i18n="brand_subtitle">EXAMPLE UNIVERSITY</p><small data-i18n="brand_desc">มหาวิทยาลัยเพื่อชุมชน · นวัตกรรมเพื่อสังคม</small></div></a>
+  <button id="hamburger" class="hamburger" aria-expanded="false" aria-controls="mobile-panel"><span></span><span></span><span></span></button>
+</div>
+<div id="mobile-panel" class="mobile-panel">
+  <form class="search-box" data-search-form><input type="search" data-i18n-placeholder="search_placeholder" placeholder="ค้นหา..."><button type="submit" data-i18n="search_btn">ค้นหา</button></form>
+  <ul class="mobile-nav">
+    <li><a href="index.html">หน้าหลัก</a></li>
+    <li><a href="about.html">เกี่ยวกับมหาวิทยาลัย</a></li><li><a href="programs.html">หลักสูตร/การศึกษา</a></li><li><a href="admission.html">การรับสมัครเข้าศึกษา</a></li><li><a href="news.html">ข่าวสารและกิจกรรม</a></li><li><a href="intranet.html">ระบบสารสนเทศภายใน</a></li><li><a href="contact.html">ติดต่อเรา</a></li>
+  </ul>
+</div></header>
+<nav class="main-nav" aria-label="เมนูหลัก"><div class="main-nav-inner">
+  <ul class="nav-links">
+    <li><a href="index.html" data-i18n="nav_home">หน้าหลัก</a></li>
+    <li class="has-dropdown">
+        <a href="about.html" data-i18n="nav_about">เกี่ยวกับมหาวิทยาลัย</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="about.html">ประวัติ</a></li><li><a href="about.html#vision">วิสัยทัศน์</a></li><li><a href="about.html#structure">โครงสร้าง</a></li><li><a href="about.html#leaders">ผู้บริหาร</a></li><li><a href="about.html#map">แผนที่</a></li></ul></li>
+    <li class="has-dropdown">
+        <a href="programs.html" data-i18n="nav_programs">หลักสูตร/การศึกษา</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="programs.html">ปริญญาตรี</a></li><li><a href="programs.html#graduate">โท-เอก</a></li><li><a href="programs.html#short">ระยะสั้น</a></li><li><a href="programs.html#faculties">คณะ</a></li><li><a href="programs.html#calendar">ปฏิทิน</a></li></ul></li>
+    <li class="active has-dropdown">
+        <a href="admission.html" data-i18n="nav_admission">การรับสมัครเข้าศึกษา</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="#tcas">TCAS / รอบรับสมัคร</a></li><li><a href="#quota">โควตา / พื้นที่</a></li><li><a href="#scholar">ทุนการศึกษา</a></li><li><a href="#guide">คู่มือการสมัคร</a></li></ul></li>
+    <li class="has-dropdown">
+        <a href="news.html" data-i18n="nav_news">ข่าวสารและกิจกรรม</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="news.html">ข่าวมหาวิทยาลัย</a></li><li><a href="news.html#events">กิจกรรม</a></li><li><a href="news.html#announce">ประกาศ</a></li></ul></li>
+    <li class="has-dropdown">
+        <a href="intranet.html" data-i18n="nav_intranet">ระบบสารสนเทศภายใน</a>
+        <button class="nav-toggle" aria-expanded="false" aria-label="เปิดเมนูย่อย"><span class="caret">▾</span></button><ul class="dropdown"><li><a href="intranet.html">ทะเบียน</a></li><li><a href="intranet.html">LMS</a></li><li><a href="intranet.html">E-Office</a></li></ul></li>
+    <li><a href="contact.html" data-i18n="nav_contact">ติดต่อเรา</a></li>
+  </ul><a href="#guide" class="btn btn-primary" style="padding:.5rem .95rem;font-size:.84rem">สมัครเลย →</a>
+</div></nav>
+
+<div class="page-hero"><div class="page-hero-inner"><span class="badge">Admission 2569</span><h1>การรับสมัครเข้าศึกษา <span>Admissions</span></h1><p>TCAS 4 รอบ · โควตาภูมิภาค · ทุนเต็มจำนวน — เลือกเส้นทางที่ใช่ แล้วสมัครออนไลน์ได้ทันที</p></div></div>
+<div class="breadcrumb"><div class="breadcrumb-inner"><a href="index.html" data-i18n="breadcrumb_home">หน้าหลัก</a> › การรับสมัครเข้าศึกษา</div></div>
+<div class="container">
+  <p id="search-result-msg" hidden style="margin:1rem 0;background:#fef9c3;border:1px solid #fde68a;padding:.6rem .8rem;border-radius:10px;font-size:.9rem"></p>
+
+  <section id="tcas" class="section">
+    <div class="section-head"><div><h2>TCAS / รอบรับสมัคร</h2><p>ปีการศึกษา 2569 — สมัครผ่าน myTCAS และพอร์ทัลมหาวิทยาลัย</p></div><a href="#guide" class="btn" style="background:#fff;border:1px solid var(--line);border-radius:10px">ดาวน์โหลดประกาศรับสมัคร PDF →</a></div>
+    <div class="cards">
+      <div class="card" data-searchable><span class="badge">รอบ 1</span><h3>Portfolio</h3><p>ยื่นผลงาน + สัมภาษณ์ — เหมาะสำหรับผู้มีผลงานเด่น</p><p style="font-size:.82rem;color:var(--muted)">1 ธ.ค. 68 – 15 ม.ค. 69</p><a class="link" href="#guide">วิธีสมัคร →</a></div>
+      <div class="card" data-searchable><span class="badge">รอบ 2</span><h3>Quota</h3><p>โควตาภูมิภาค / โรงเรียนเครือข่าย — ใช้เกรด + สอบข้อเขียน</p><p style="font-size:.82rem;color:var(--muted)">ก.พ. – มี.ค. 69</p><a class="link" href="#quota">ดูโควตา →</a></div>
+      <div class="card" data-searchable><span class="badge">รอบ 3</span><h3>Admission</h3><p>ใช้คะแนน TGAT/TPAT + A-Level — เลือกได้ 10 อันดับ</p><p style="font-size:.82rem;color:var(--muted)">พ.ค. 69</p><a class="link" href="#tcas">เกณฑ์คะแนน →</a></div>
+      <div class="card" data-searchable><span class="badge">รอบ 4</span><h3>Direct Admission</h3><p>รับตรงอิสระ — สมัครตรงกับมหาวิทยาลัย</p><p style="font-size:.82rem;color:var(--muted)">พ.ค. – มิ.ย. 69</p><a class="link" href="#guide">สมัครตรง →</a></div>
+      <div class="card" data-searchable><h3>ปริญญาโท-เอก</h3><p>เปิดรับ 2 ภาคเรียน — สอบข้อเขียน + สัมภาษณ์ + โครงร่างวิจัย</p><p style="font-size:.82rem;color:var(--muted)">ตลอดปี</p><a class="link" href="programs.html#graduate">ดูหลักสูตร →</a></div>
+      <div class="card" data-searchable><h3>หลักสูตรระยะสั้น</h3><p>สมัครได้ตลอดปี — เรียนจบไว มีใบรับรอง</p><p style="font-size:.82rem;color:var(--muted)">Rolling</p><a class="link" href="programs.html#short">ดูคอร์ส →</a></div>
+    </div>
+  </section>
+
+  <section id="quota" class="section">
+    <div class="section-head"><div><h2>โควตา / พื้นที่</h2><p>โอกาสสำหรับนักเรียนในพื้นที่และโรงเรียนเครือข่าย</p></div></div>
+    <div class="intranet-grid">
+      <div class="app-tile" data-searchable><div class="app-icon">🏫</div><h3>โควตาโรงเรียนเครือข่าย</h3><p>120 โรงเรียน — ใช้เกรด 5 ภาคเรียน + แฟ้มสะสมงาน</p><a class="link" href="#quota">รายชื่อโรงเรียน →</a></div>
+      <div class="app-tile" data-searchable><div class="app-icon">🌾</div><h3>โควตาภูมิภาค</h3><p>สำหรับนักเรียนในจังหวัดภาคตะวันออกเฉียงเหนือ</p><a class="link" href="#quota">เกณฑ์โควตา →</a></div>
+      <div class="app-tile" data-searchable><div class="app-icon">⚙️</div><h3>โควตาความสามารถพิเศษ</h3><p>กีฬา ดนตรี นวัตกรรม — ยื่นผลงาน + ทดสอบทักษะ</p><a class="link" href="#quota">ยื่นผลงาน →</a></div>
+    </div>
+  </section>
+
+  <section id="scholar" class="section">
+    <div class="section-head"><div><h2>ทุนการศึกษา</h2><p>Scholarships — เรียนดี ขาดแคลน นวัตกรรม แลกเปลี่ยน</p></div></div>
+    <div class="cards">
+      <div class="card" data-searchable><h3>ทุนเรียนดี</h3><p>ยกเว้นค่าเทอม 50–100% — GPA ≥ 3.50 + สัมภาษณ์</p><a class="link" href="#scholar">เงื่อนไข →</a></div>
+      <div class="card" data-searchable><h3>ทุนขาดแคลน</h3><p>สนับสนุนค่าเทอม + ค่าครองชีพ — พิจารณาฐานะครอบครัว</p><a class="link" href="#scholar">ยื่นขอทุน →</a></div>
+      <div class="card" data-searchable><h3>ทุนนวัตกรรมชุมชน</h3><p>ทุนเต็มจำนวน + งบทำโครงงานเพื่อสังคม</p><a class="link" href="#scholar">ยื่นโครงงาน →</a></div>
+      <div class="card" data-searchable><h3>ทุนแลกเปลี่ยน</h3><p>เรียนต่างประเทศ 1 ภาคเรียน — มหาวิทยาลัยคู่ความร่วมมือ 30+ แห่ง</p><a class="link" href="#scholar">ดูทุน →</a></div>
+      <div class="card" data-searchable><h3>ทุน กยศ. / กรอ.</h3><p>กู้ยืมเพื่อการศึกษา — ดำเนินการผ่านกองพัฒนานักศึกษา</p><a class="link" href="students.html">ติดต่อ กยศ. →</a></div>
+      <div class="card" data-searchable style="background:#fffbe6;border-color:#fde68a"><h3>รวมทุนทั้งหมด</h3><p>เช็กลิสต์ทุนที่เปิดรับตอนนี้ + ปฏิทินยื่น</p><a class="link" href="#scholar">ดูทั้งหมด →</a></div>
+    </div>
+  </section>
+
+  <section id="guide" class="section">
+    <div class="section-head"><div><h2>คู่มือการสมัคร</h2><p>How to Apply — 4 ขั้นตอน สมัครออนไลน์ จบใน 10 นาที</p></div></div>
+    <div class="content-grid">
+      <div class="card" data-searchable>
+        <ol style="display:grid;gap:.7rem;padding-left:1.2rem">
+          <li><strong>สร้างบัญชี</strong> — ลงทะเบียนด้วยอีเมล / เบอร์โทร → ยืนยัน OTP</li>
+          <li><strong>กรอกข้อมูล</strong> — ประวัติส่วนตัว วุฒิการศึกษา เลือกคณะ/สาขา</li>
+          <li><strong>อัปโหลดเอกสาร</strong> — บัตรประชาชน Transcript รูปถ่าย ผลงาน (ถ้ามี)</li>
+          <li><strong>ชำระเงิน & ยืนยัน</strong> — ชำระค่าสมัครผ่าน QR / โอน → รอประกาศรายชื่อ</li>
+        </ol>
+        <div style="display:flex;gap:.6rem;flex-wrap:wrap;margin-top:1rem">
+          <a href="login.html" class="btn btn-primary">สมัครออนไลน์ — Apply Now</a>
+          <a href="#guide" class="btn" style="background:#fff;border:1px solid var(--line);border-radius:999px">ดาวน์โหลดคู่มือ PDF</a>
+        </div>
+      </div>
+      <div class="card" data-searchable>
+        <h3>ต้องการความช่วยเหลือ?</h3>
+        <ul class="kv">
+          <li><span class="k">กองรับสมัคร</span><span>0-4422-0200 ต่อ 2101–2104</span></li>
+          <li><span class="k">อีเมล</span><span>admission@example-university.ac.th</span></li>
+          <li><span class="k">LINE</span><span>@example-admission</span></li>
+          <li><span class="k">เวลาทำการ</span><span>จันทร์–ศุกร์ 08:30–16:30 / เสาร์ 09:00–15:00 (ช่วงรับสมัคร)</span></li>
+        </ul>
+        <p style="font-size:.82rem;color:var(--muted);margin-top:.8rem">หรือมาที่ <strong>ศูนย์รับสมัคร อาคารบริหาร ชั้น 1</strong> — มีเจ้าหน้าที่ให้คำปรึกษาตัวต่อตัว</p>
+        <div style="background:#f8fafc;border:1px dashed var(--line);border-radius:10px;padding:1rem;text-align:center;color:var(--muted);font-size:.82rem;margin-top:.8rem">วิดีโอแนะนำ: วิธีสมัคร TCAS 2569 (ฝัง YouTube ได้ที่นี่)</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="card" data-searchable style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem">
+      <div><h3>พร้อมสมัครแล้วหรือยัง?</h3><p style="color:var(--muted);font-size:.9rem">สร้างบัญชีวันนี้ — บันทึกแบบร่างได้ กลับมากรอกต่อภายหลังได้</p></div>
+      <a href="login.html" class="btn btn-primary">เริ่มสมัครเลย →</a>
+    </div>
+  </section>
+</div>
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="footer-brand"><div style="display:flex;align-items:center;gap:.7rem;margin-bottom:.6rem"><div style="width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,#1e4a7a,#2a6cb6);display:grid;place-items:center">🎓</div><div><h4 style="margin:0">มหาวิทยาลัยตัวอย่าง</h4><small style="color:#94a3b8;letter-spacing:.06em;font-weight:600">EXAMPLE UNIVERSITY</small></div></div><p>มุ่งมั่นผลิตบัณฑิตคุณภาพ — เรียนรู้เพื่อชุมชน นวัตกรรมเพื่อสังคม</p>
+      <ul class="footer-contact"><li><span>📍</span><span>123 ถนนมหาวิทยาลัย ต.ในเมือง อ.เมือง จ.ตัวอย่าง 30000</span></li><li><span>📞</span><span>โทร. 0-4422-0000</span> · <span>โทรสาร 0-4422-0001</span></li><li><span>✉️</span><span>info@example-university.ac.th</span></li><li><span>🕘</span><span>จันทร์–ศุกร์ 08:30–16:30 น.</span></li></ul><a href="sitemap.html" style="display:inline-block;margin-top:.8rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);padding:.4rem .75rem;border-radius:999px;font-size:.82rem;color:#cbd5e1">🗺️ แผนผังเว็บไซต์ →</a></div>
+    <div class="footer-col"><h4>เกี่ยวกับมหาวิทยาลัย</h4><ul><li><a href="about.html">ประวัติ</a></li><li><a href="about.html#vision">วิสัยทัศน์</a></li><li><a href="about.html#structure">โครงสร้าง</a></li><li><a href="about.html#leaders">ผู้บริหาร</a></li><li><a href="about.html#map">แผนที่</a></li></ul></div>
+    <div class="footer-col"><h4>หลักสูตร/การศึกษา</h4><ul><li><a href="programs.html">ปริญญาตรี</a></li><li><a href="programs.html#graduate">โท-เอก</a></li><li><a href="programs.html#short">ระยะสั้น</a></li><li><a href="programs.html#faculties">คณะ</a></li><li><a href="programs.html#calendar">ปฏิทิน</a></li></ul></div>
+    <div class="footer-col"><h4>การรับสมัคร</h4><ul><li><a href="admission.html">TCAS</a></li><li><a href="admission.html#quota">โควตา</a></li><li><a href="admission.html#scholar">ทุน</a></li><li><a href="admission.html#guide">คู่มือ</a></li></ul></div>
+    <div class="footer-col"><h4>ข่าวสารและกิจกรรม</h4><ul><li><a href="news.html">ข่าวมหาลัย</a></li><li><a href="news.html#faculty">ข่าวคณะ</a></li><li><a href="news.html#events">กิจกรรม</a></li><li><a href="news.html#announce">ประกาศ</a></li></ul></div>
+    <div class="footer-col"><h4>ระบบสารสนเทศ</h4><ul><li><a href="intranet.html">ทะเบียน</a></li><li><a href="intranet.html">LMS</a></li><li><a href="intranet.html">E-Office</a></li><li><a href="login.html">เข้าสู่ระบบ</a></li><li><a href="sitemap.html">Sitemap</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>สงวนลิขสิทธิ์ © 2026 มหาวิทยาลัยตัวอย่าง</span><span><a href="sitemap.html">Sitemap</a> · <a href="contact.html">Privacy</a> · <a href="contact.html">Contact</a></span></div>
+</footer>
+</body>
+</html>
