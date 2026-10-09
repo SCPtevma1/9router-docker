@@ -1,0 +1,10 @@
+<label for="title">หัวข้อ</label><input id="title" name="title" required value="<?= escape((string) ($item['title'] ?? '')) ?>">
+<label for="summary">สรุปย่อ</label><textarea id="summary" name="summary" required><?= escape((string) ($item['summary'] ?? '')) ?></textarea>
+<label for="body">รายละเอียด</label><textarea id="body" name="body" required><?= escape((string) ($item['body'] ?? '')) ?></textarea>
+<label for="content_type">หมวดข่าว</label><select id="content_type" name="content_type"><option value="university" <?= in_array(($item['content_type'] ?? 'university'), ['news', 'university'], true) ? 'selected' : '' ?>>ข่าวมหาวิทยาลัย</option><option value="faculty" <?= (($item['content_type'] ?? '') === 'faculty') ? 'selected' : '' ?>>ข่าวคณะ</option><option value="event" <?= (($item['content_type'] ?? '') === 'event') ? 'selected' : '' ?>>กิจกรรม / ปฏิทินกิจกรรม</option><option value="announcement" <?= (($item['content_type'] ?? '') === 'announcement') ? 'selected' : '' ?>>ประกาศ</option></select>
+<label for="event_date">วันที่กิจกรรม (ถ้ามี)</label><input id="event_date" name="event_date" type="date" value="<?= escape((string) ($item['event_date'] ?? '')) ?>">
+<label for="status">สถานะ</label><select id="status" name="status"><option value="draft" <?= (($item['status'] ?? '') !== 'published') ? 'selected' : '' ?>>ฉบับร่าง</option><option value="published" <?= (($item['status'] ?? '') === 'published') ? 'selected' : '' ?>>เผยแพร่</option></select>
+<label for="image_upload">รูปภาพข่าวสาร / กิจกรรม</label><input id="image_upload" name="image_upload[]" type="file" accept="image/jpeg,image/png,image/gif,image/webp" multiple><p class="hint">เลือกเพิ่มได้หลายรูป รองรับ JPG, PNG, GIF, WebP ขนาดไม่เกิน 5 MB ต่อรูป และไม่เกิน 20 รูปต่อครั้ง</p>
+<?php if (!empty($images)): ?><div class="image-previews" aria-label="รูปภาพที่บันทึกไว้">
+    <?php foreach ($images as $image): ?><div class="image-preview"><img src="../../<?= escape($image['image_path']) ?>" alt="รูปภาพเดิม"><label><input type="checkbox" name="remove_images[]" value="<?= (int) $image['id'] ?>"> ลบรูปนี้</label></div><?php endforeach; ?>
+</div><?php endif; ?>
